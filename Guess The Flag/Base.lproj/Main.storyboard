@@ -16,29 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-RN-8mO">
-                                <rect key="frame" x="174" y="100" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aes-wr-oUc">
+                                <rect key="frame" x="95" y="100" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aes-wr-oUc">
-                                <rect key="frame" x="174" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-Cn-y47">
+                                <rect key="frame" x="95" y="388" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-Cn-y47">
-                                <rect key="frame" x="174" y="360" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-RN-8mO">
+                                <rect key="frame" x="95" y="244" width="224" height="114"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BGK-Cn-y47" firstAttribute="centerX" secondItem="fKe-RN-8mO" secondAttribute="centerX" id="4w4-Od-9Pd"/>
+                            <constraint firstItem="Aes-wr-oUc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DwV-J6-4hM"/>
+                            <constraint firstItem="fKe-RN-8mO" firstAttribute="centerX" secondItem="Aes-wr-oUc" secondAttribute="centerX" id="bZc-zB-DID"/>
+                            <constraint firstItem="BGK-Cn-y47" firstAttribute="top" secondItem="fKe-RN-8mO" secondAttribute="bottom" constant="30" id="gjC-bs-miZ"/>
+                            <constraint firstItem="Aes-wr-oUc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="l3Y-yu-fyD"/>
+                            <constraint firstItem="fKe-RN-8mO" firstAttribute="top" secondItem="Aes-wr-oUc" secondAttribute="bottom" constant="30" id="ol7-vd-ZhO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JJR-KR-hRY"/>
+                    <connections>
+                        <outlet property="button1" destination="Aes-wr-oUc" id="m2d-Bh-67n"/>
+                        <outlet property="button2" destination="fKe-RN-8mO" id="91L-MS-4j1"/>
+                        <outlet property="button3" destination="BGK-Cn-y47" id="gRj-2K-4bn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,6 +74,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="us" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
